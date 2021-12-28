@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "warpedabyss:neodymium_ore"
+  },
+  "result": "warpedabyss:neodymium_ingot",
+  "experience": 1.0,
+  "cookingtime": 100
+}
