@@ -1,13 +1,16 @@
 package com.mylez.warpedabyss.datagen;
 
 import com.mylez.warpedabyss.setup.Registration;
+import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.HashCache;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.common.Tags;
 
 import java.io.IOException;
 import java.util.function.Consumer;
@@ -18,6 +21,7 @@ public class MyRecipes extends RecipeProvider {
 
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
+        //smelting
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.NEODYMIUM_ORE_ITEM),
                         Registration.NEODYMIUM_INGOT.get(), 1.0f, 100)
                 .unlockedBy("has_ore", has(Registration.NEODYMIUM_ORE_ITEM))
@@ -26,5 +30,28 @@ public class MyRecipes extends RecipeProvider {
                         Registration.NEODYMIUM_INGOT.get(), 0.0f, 100)
                 .unlockedBy("has_chunk", has(Registration.RAW_NEODYMIUM_CHUNK.get()))
                 .save(consumer, "neodymium_ingot2");
+
+        //crafting
+
+/*        ShapedRecipeBuilder.shaped(Registration.GENERATOR.get())
+                .pattern("mxm")
+                .pattern("x#x")
+                .pattern("#x#")
+                .define('x', Tags.Items.GEMS_DIAMOND)
+                .define('#', Tags.Items.INGOTS_IRON)
+                .define('m', Registration.NEODYMIUM_INGOT.get())
+                .group("tutorialv3")
+                .unlockedBy("mysterious", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.NEODYMIUM_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(Registration.POWERGEN.get())
+                .pattern("mmm")
+                .pattern("x#x")
+                .pattern("#x#")
+                .define('x', Tags.Items.DUSTS_REDSTONE)
+                .define('#', Tags.Items.INGOTS_IRON)
+                .define('m', Registration.NEODYMIUM_INGOT.get())
+                .group("tutorialv3")
+                .unlockedBy("mysterious", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.NEODYMIUM_INGOT.get()))
+                .save(consumer);*/
     }
 }

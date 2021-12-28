@@ -14,7 +14,7 @@ import org.apache.logging.log4j.Logger;
 @Mod(WarpedAbyss.MODID)
 public class WarpedAbyss {
 
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MODID = "warpedabyss";
 
     public WarpedAbyss() {

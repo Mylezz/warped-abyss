@@ -17,11 +17,23 @@ public class MyLanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         add("itemGroup." + TAB_NAME, "Warped Abyss");
         //blocks
+
         add(Registration.NEODYMIUM_ORE_OVERWORLD.get(), "Neodymium ore");
         add(Registration.NEODYMIUM_ORE_DEEPSLATE.get(), "Deepslate Neodymium ore");
+/*        add(MESSAGE_POWERGEN, "Power generator generating %s per tick!");
+        add(MESSAGE_GENERATOR, "Generate ores from ingots!");
+        add(SCREEN_TUTORIAL_POWERGEN, "Power generator");
+        add(Registration.GENERATOR.get(), "Generator");
+        add(Registration.POWERGEN.get(), "Power generator");*/
         //items
+
         add(Registration.RAW_NEODYMIUM_CHUNK.get(), "Neodymium Raw Chunk");
         add(Registration.NEODYMIUM_INGOT.get(), "Neodymium Ingot");
         add(Registration.NEODYMIUM_NUGGET.get(), "Neodymium Nugget");
+
+
+        //ENTITY
+/*        add(Registration.THIEF_EGG.get(), "Thief Egg");
+        add(Registration.THIEF.get(), "Thief");*/
     }
 }
