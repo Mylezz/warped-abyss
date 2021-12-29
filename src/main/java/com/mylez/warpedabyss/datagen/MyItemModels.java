@@ -23,7 +23,9 @@ public class MyItemModels extends ItemModelProvider {
         withExistingParent(Registration.PALLADIUM_ORE_OVERWORLD_ITEM.get().getRegistryName().getPath(), modLoc("block/palladium_ore_overworld"));
         withExistingParent(Registration.PALLADIUM_ORE_DEEPSLATE_ITEM.get().getRegistryName().getPath(), modLoc("block/palladium_ore_deepslate"));
         //blocks
-
+        withExistingParent(Registration.NEODYMIUM_BLOCK_STORAGE.get().getRegistryName().getPath(), modLoc("block/neodymium_block"));
+        withExistingParent(Registration.LAWRENCIUM_BLOCK_STORAGE.get().getRegistryName().getPath(), modLoc("block/lawrencium_block"));
+        withExistingParent(Registration.PALLADIUM_BLOCK_STORAGE.get().getRegistryName().getPath(), modLoc("block/palladium_block"));
         //items
         //chunk
         singleTexture(Registration.RAW_NEODYMIUM_CHUNK.get().getRegistryName().getPath(),

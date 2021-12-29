@@ -68,6 +68,19 @@ public class MyRecipes extends RecipeProvider {
                 .unlockedBy("palladium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PALLADIUM_NUGGET.get()))
                 .save(consumer);
 
+        //blocks
+/*        ShapelessRecipeBuilder.shapeless(Registration.NEODYMIUM_BLOCK.get())
+                .requires(Registration.NEODYMIUM_INGOT.get(), 9)
+                .unlockedBy("neodymium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.NEODYMIUM_INGOT.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(Registration.LAWRENCIUM_BLOCK.get())
+                .requires(Registration.LAWRENCIUM_INGOT.get(), 9)
+                .unlockedBy("lawrencium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.LAWRENCIUM_INGOT.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(Registration.PALLADIUM_BLOCK.get())
+                .requires(Registration.PALLADIUM_INGOT.get(), 9)
+                .unlockedBy("palladium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PALLADIUM_INGOT.get()))
+                .save(consumer);*/
 
 
 

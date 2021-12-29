@@ -17,22 +17,33 @@ public class MyBlockTags extends BlockTagsProvider {
     @Override
     protected void addTags() {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-
+                //ores
                 .add(Registration.NEODYMIUM_ORE_OVERWORLD.get())
                 .add(Registration.NEODYMIUM_ORE_DEEPSLATE.get())
                 .add(Registration.LAWRENCIUM_ORE_OVERWORLD.get())
                 .add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get())
                 .add(Registration.PALLADIUM_ORE_OVERWORLD.get())
-                .add(Registration.PALLADIUM_ORE_DEEPSLATE.get());
+                .add(Registration.PALLADIUM_ORE_DEEPSLATE.get())
+                //blocks
+                .add(Registration.NEODYMIUM_BLOCK_STORAGE.get())
+                .add(Registration.LAWRENCIUM_BLOCK_STORAGE.get())
+                .add(Registration.PALLADIUM_BLOCK_STORAGE.get());
+
         tag(BlockTags.NEEDS_IRON_TOOL)
-
+                //ores
                 .add(Registration.NEODYMIUM_ORE_OVERWORLD.get())
                 .add(Registration.NEODYMIUM_ORE_DEEPSLATE.get())
                 .add(Registration.LAWRENCIUM_ORE_OVERWORLD.get())
                 .add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get())
                 .add(Registration.PALLADIUM_ORE_OVERWORLD.get())
-                .add(Registration.PALLADIUM_ORE_DEEPSLATE.get());
+                .add(Registration.PALLADIUM_ORE_DEEPSLATE.get())
+                //blocks
+                .add(Registration.NEODYMIUM_BLOCK_STORAGE.get())
+                .add(Registration.LAWRENCIUM_BLOCK_STORAGE.get())
+                .add(Registration.PALLADIUM_BLOCK_STORAGE.get());
+
         tag(Tags.Blocks.ORES)
+                //ores
                 .add(Registration.NEODYMIUM_ORE_OVERWORLD.get())
                 .add(Registration.NEODYMIUM_ORE_DEEPSLATE.get())
                 .add(Registration.LAWRENCIUM_ORE_OVERWORLD.get())
@@ -49,6 +60,18 @@ public class MyBlockTags extends BlockTagsProvider {
                 .add(Registration.PALLADIUM_ORE_OVERWORLD.get())
                 .add(Registration.PALLADIUM_ORE_DEEPSLATE.get());
 
+        //storage blocks
+        tag(Tags.Blocks.STORAGE_BLOCKS)
+                .add(Registration.NEODYMIUM_BLOCK_STORAGE.get())
+                .add(Registration.LAWRENCIUM_BLOCK_STORAGE.get())
+                .add(Registration.PALLADIUM_BLOCK_STORAGE.get());
+        //storage blocks
+/*        tag(Tags.Blocks.NEODYMIUM_BLOCK)
+                .add(Registration.NEODYMIUM_BLOCK_STORAGE.get());
+        tag(Tags.Blocks.LAWRENCIUM_BLOCK)
+                .add(Registration.LAWRENCIUM_BLOCK_STORAGE.get());
+        tag(Tags.Blocks.PALLADIUM_BLOCK)
+                .add(Registration.PALLADIUM_BLOCK_STORAGE.get());*/
 
     }
 

@@ -2,6 +2,7 @@ package com.mylez.warpedabyss.datagen;
 
 import com.mylez.warpedabyss.setup.Registration;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.world.item.Item;
 
 public class MyLootTables extends BaseLootTableProvider {
 
@@ -21,5 +22,9 @@ public class MyLootTables extends BaseLootTableProvider {
         //Palladium ore
         lootTables.put(Registration.PALLADIUM_ORE_OVERWORLD.get(), createSilkTouchTable("palladium_ore_overworld", Registration.PALLADIUM_ORE_OVERWORLD.get(), Registration.RAW_PALLADIUM_CHUNK.get(), 1, 3));
         lootTables.put(Registration.PALLADIUM_ORE_DEEPSLATE.get(), createSilkTouchTable("palladium_ore_deepslate", Registration.PALLADIUM_ORE_DEEPSLATE.get(), Registration.RAW_PALLADIUM_CHUNK.get(), 1, 3));
+        //Storage Blocks
+/*        lootTables.put(Registration.NEODYMIUM_BLOCK.get(), createSilkTouchTable("neodymium_block", Registration.NEODYMIUM_BLOCK.get(), Item.byBlock(Registration.NEODYMIUM_BLOCK.get()), 1, 1));
+        lootTables.put(Registration.LAWRENCIUM_BLOCK.get(), createSilkTouchTable("lawrencium_block", Registration.LAWRENCIUM_BLOCK.get(), Item.byBlock(Registration.LAWRENCIUM_BLOCK.get()), 1, 1));
+        lootTables.put(Registration.PALLADIUM_BLOCK.get(), createSilkTouchTable("palladium_block", Registration.PALLADIUM_BLOCK.get(), Item.byBlock(Registration.PALLADIUM_BLOCK.get()), 1, 1));*/
     }
 }

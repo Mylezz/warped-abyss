@@ -64,11 +64,23 @@ public class Registration {
     public static final RegistryObject<Item> PALLADIUM_ORE_OVERWORLD_ITEM = fromBlock(PALLADIUM_ORE_OVERWORLD);
     public static final RegistryObject<Block> PALLADIUM_ORE_DEEPSLATE = BLOCKS.register("palladium_ore_deepslate", () -> new Block(BLOCK_PROPERTIES));
     public static final RegistryObject<Item> PALLADIUM_ORE_DEEPSLATE_ITEM = fromBlock(PALLADIUM_ORE_DEEPSLATE);
-// BLOCK TAGS
+    // storage blocks
+    public static final RegistryObject<Block> NEODYMIUM_BLOCK_STORAGE = BLOCKS.register("neodymium_block", () -> new Block(BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> NEODYMIUM_BLOCK_STORAGE_ITEM = fromBlock(NEODYMIUM_BLOCK_STORAGE);
+    public static final RegistryObject<Block> LAWRENCIUM_BLOCK_STORAGE = BLOCKS.register("lawrencium_block", () -> new Block(BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> LAWRENCIUM_BLOCK_STORAGE_ITEM = fromBlock(LAWRENCIUM_BLOCK_STORAGE);
+    public static final RegistryObject<Block> PALLADIUM_BLOCK_STORAGE = BLOCKS.register("palladium_block", () -> new Block(BLOCK_PROPERTIES));
+    public static final RegistryObject<Item> PALLADIUM_BLOCK_STORAGE_ITEM = fromBlock(PALLADIUM_BLOCK_STORAGE);
 
+// BLOCK TAGS
+    //ore
     public static final Tags.IOptionalNamedTag<Block> NEODYMIUM_ORE = BlockTags.createOptional(new ResourceLocation(WarpedAbyss.MODID, "neodymium_ore"));
     public static final Tags.IOptionalNamedTag<Block> LAWRENCIUM_ORE = BlockTags.createOptional(new ResourceLocation(WarpedAbyss.MODID, "lawrencium_ore"));
     public static final Tags.IOptionalNamedTag<Block> PALLADIUM_ORE = BlockTags.createOptional(new ResourceLocation(WarpedAbyss.MODID, "palladium_ore"));
+    //storage block
+    public static final Tags.IOptionalNamedTag<Block> NEODYMIUM_BLOCK = BlockTags.createOptional(new ResourceLocation(WarpedAbyss.MODID, "neodymium_block"));
+    public static final Tags.IOptionalNamedTag<Block> LAWRENCIUM_BLOCK = BlockTags.createOptional(new ResourceLocation(WarpedAbyss.MODID, "lawrencium_block"));
+    public static final Tags.IOptionalNamedTag<Block> PALLADIUM_BLOCK = BlockTags.createOptional(new ResourceLocation(WarpedAbyss.MODID, "palladium_block"));
 //ITEMS
     //ingots
     public static final RegistryObject<Item> NEODYMIUM_INGOT = ITEMS.register("neodymium_ingot", () -> new Item(ITEM_PROPERTIES));
@@ -93,7 +105,7 @@ public class Registration {
 
 public static final Tags.IOptionalNamedTag<Item> NEODYMIUM_ORE_ITEM = ItemTags.createOptional(new ResourceLocation(WarpedAbyss.MODID, "neodymium_ore"));
 public static final Tags.IOptionalNamedTag<Item> LAWRENCIUM_ORE_ITEM = ItemTags.createOptional(new ResourceLocation(WarpedAbyss.MODID, "lawrencium_ore"));
-    public static final Tags.IOptionalNamedTag<Item> PALLADIUM_ORE_ITEM = ItemTags.createOptional(new ResourceLocation(WarpedAbyss.MODID, "palladium_ore"));
+public static final Tags.IOptionalNamedTag<Item> PALLADIUM_ORE_ITEM = ItemTags.createOptional(new ResourceLocation(WarpedAbyss.MODID, "palladium_ore"));
 //ENTITY SHIT
 
 

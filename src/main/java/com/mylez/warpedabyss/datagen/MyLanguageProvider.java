@@ -26,6 +26,10 @@ public class MyLanguageProvider extends LanguageProvider {
         //palladium
         add(Registration.PALLADIUM_ORE_OVERWORLD.get(), "Palladium ore");
         add(Registration.PALLADIUM_ORE_DEEPSLATE.get(), "Deepslate Palladium ore");
+        //storage block
+        add(Registration.NEODYMIUM_BLOCK_STORAGE.get(), "Neodymium Block");
+        add(Registration.LAWRENCIUM_BLOCK_STORAGE.get(), "Lawrencium Block");
+        add(Registration.PALLADIUM_BLOCK_STORAGE.get(), "Palladium Block");
         //Chunks
         add(Registration.RAW_NEODYMIUM_CHUNK.get(), "Neodymium Raw Chunk");
         add(Registration.RAW_LAWRENCIUM_CHUNK.get(), "Lawrencium Raw Chunk");

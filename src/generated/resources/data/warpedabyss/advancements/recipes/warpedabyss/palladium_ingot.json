@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "warpedabyss:palladium_ingot"
+    ]
+  },
+  "criteria": {
+    "palladium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "warpedabyss:palladium_nugget"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "warpedabyss:palladium_ingot"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "palladium",
+      "has_the_recipe"
+    ]
+  ]
+}
