@@ -11,8 +11,7 @@ public class MyLootTables extends BaseLootTableProvider {
 
     @Override
     protected void addTables() {
-/*        lootTables.put(Registration.GENERATOR.get(), createStandardTable("generator", Registration.GENERATOR.get(), Registration.GENERATOR_BE.get()));
-        lootTables.put(Registration.POWERGEN.get(), createStandardTable("powergen", Registration.POWERGEN.get(), Registration.POWERGEN_BE.get()));*/
+
         //neodymium ore
         lootTables.put(Registration.NEODYMIUM_ORE_OVERWORLD.get(), createSilkTouchTable("neodymium_ore_overworld", Registration.NEODYMIUM_ORE_OVERWORLD.get(), Registration.RAW_NEODYMIUM_CHUNK.get(), 1, 3));
         lootTables.put(Registration.NEODYMIUM_ORE_DEEPSLATE.get(), createSilkTouchTable("neodymium_ore_deepslate", Registration.NEODYMIUM_ORE_DEEPSLATE.get(), Registration.RAW_NEODYMIUM_CHUNK.get(), 1, 3));

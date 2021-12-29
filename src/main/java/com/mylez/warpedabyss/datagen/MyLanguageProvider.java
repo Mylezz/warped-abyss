@@ -23,12 +23,7 @@ public class MyLanguageProvider extends LanguageProvider {
         //lawrencium
         add(Registration.LAWRENCIUM_ORE_OVERWORLD.get(), "Lawrencium ore");
         add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get(), "Deepslate Lawrencium ore");
-/*        add(MESSAGE_POWERGEN, "Power generator generating %s per tick!");
-        add(MESSAGE_GENERATOR, "Generate ores from ingots!");
-        add(SCREEN_TUTORIAL_POWERGEN, "Power generator");
-        add(Registration.GENERATOR.get(), "Generator");
-        add(Registration.POWERGEN.get(), "Power generator");*/
-        //items
+
         //Chunks
         add(Registration.RAW_NEODYMIUM_CHUNK.get(), "Neodymium Raw Chunk");
         add(Registration.RAW_LAWRENCIUM_CHUNK.get(), "Lawrencium Raw Chunk");
@@ -47,7 +42,6 @@ public class MyLanguageProvider extends LanguageProvider {
 
 
         //ENTITY
-/*        add(Registration.THIEF_EGG.get(), "Thief Egg");
-        add(Registration.THIEF.get(), "Thief");*/
+
     }
 }

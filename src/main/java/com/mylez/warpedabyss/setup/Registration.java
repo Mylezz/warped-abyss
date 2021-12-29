@@ -46,16 +46,7 @@ public class Registration {
 //BLOCKS
 //MACHINES
 
-/*
-    public static final RegistryObject<GeneratorBlock> GENERATOR = BLOCKS.register("generator", GeneratorBlock::new);
-    public static final RegistryObject<Item> GENERATOR_ITEM = fromBlock(GENERATOR);
-    public static final RegistryObject<BlockEntityType<GeneratorBE>> GENERATOR_BE = BLOCK_ENTITIES.register("generator", () -> BlockEntityType.Builder.of(GeneratorBE::new, GENERATOR.get()).build(null));
-    public static final RegistryObject<PowergenBlock> POWERGEN = BLOCKS.register("powergen", PowergenBlock::new);
-    public static final RegistryObject<Item> POWERGEN_ITEM = fromBlock(POWERGEN);
-    public static final RegistryObject<BlockEntityType<PowergenBE>> POWERGEN_BE = BLOCK_ENTITIES.register("powergen", () -> BlockEntityType.Builder.of(PowergenBE::new, POWERGEN.get()).build(null));
-    public static final RegistryObject<MenuType<PowergenContainer>> POWERGEN_CONTAINER = CONTAINERS.register("powergen",
-            () -> IForgeMenuType.create((windowId, inv, data) -> new PowergenContainer(windowId, data.readBlockPos(), inv, inv.player)));
-*/
+
 
     //ORES
     //Neodymium
@@ -92,15 +83,7 @@ public class Registration {
 public static final Tags.IOptionalNamedTag<Item> NEODYMIUM_ORE_ITEM = ItemTags.createOptional(new ResourceLocation(WarpedAbyss.MODID, "neodymium_ore"));
 public static final Tags.IOptionalNamedTag<Item> LAWRENCIUM_ORE_ITEM = ItemTags.createOptional(new ResourceLocation(WarpedAbyss.MODID, "lawrencium_ore"));
 //ENTITY SHIT
-/*
 
-    public static final RegistryObject<EntityType<ThiefEntity>> THIEF = ENTITIES.register("thief", () -> EntityType.Builder.of(ThiefEntity::new, MobCategory.CREATURE)
-            .sized(0.6f, 1.95f)
-            .clientTrackingRange(8)
-            .setShouldReceiveVelocityUpdates(false)
-            .build("thief"));
-    public static final RegistryObject<Item> THIEF_EGG = ITEMS.register("thief", () -> new ForgeSpawnEggItem(THIEF, 0xff0000, 0x00ff00, ITEM_PROPERTIES));
-*/
 
 // YOU SHALL NOT PASS
     public static <B extends Block> RegistryObject<Item> fromBlock(RegistryObject<B> block) {

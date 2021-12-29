@@ -63,15 +63,6 @@ public class MyRecipes extends RecipeProvider {
                 .unlockedBy("lawrencium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.LAWRENCIUM_INGOT.get()))
                 .save(consumer);
         //machines
-        /*ShapedRecipeBuilder.shaped(Registration.POWERGEN.get())
-                .pattern("mmm")
-                .pattern("x#x")
-                .pattern("#x#")
-                .define('x', Tags.Items.DUSTS_REDSTONE)
-                .define('#', Tags.Items.INGOTS_IRON)
-                .define('m', Registration.NEODYMIUM_INGOT.get())
-                .group("tutorialv3")
-                .unlockedBy("mysterious", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.NEODYMIUM_INGOT.get()))
-                .save(consumer);*/
+
     }
 }

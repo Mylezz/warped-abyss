@@ -23,8 +23,5 @@ public class ModSetup {
 
     }
 
-/*    @SubscribeEvent
-    public static void onAttributeCreate(EntityAttributeCreationEvent event) {
-        event.put(Registration.THIEF.get(), ThiefEntity.prepareAttributes().build());
-    }*/
+
 }

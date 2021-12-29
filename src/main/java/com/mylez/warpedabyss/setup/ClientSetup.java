@@ -21,28 +21,4 @@ public class ClientSetup {
 
     }
 
-/*
-    @SubscribeEvent
-    public static void onModelRegistryEvent(ModelRegistryEvent event) {
-        ModelLoaderRegistry.registerLoader(GeneratorModelLoader.GENERATOR_LOADER, new GeneratorModelLoader());
-    }
-*/
-
-/*    @SubscribeEvent
-    public static void onRegisterLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
-        event.registerLayerDefinition(ThiefModel.THIEF_LAYER, ThiefModel::createBodyLayer);
-    }
-
-    @SubscribeEvent
-    public static void onRegisterRenderer(EntityRenderersEvent.RegisterRenderers event) {
-        event.registerEntityRenderer(Registration.THIEF.get(), ThiefRenderer::new);
-    }*/
-
-/*    @SubscribeEvent
-    public static void onTextureStitch(TextureStitchEvent.Pre event) {
-        if (!event.getAtlas().location().equals(TextureAtlas.LOCATION_BLOCKS)) {
-            return;
-        }
-        event.addSprite(PowergenRenderer.HALO);
-    }*/
 }
