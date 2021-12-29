@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "warpedabyss:neodymium_block"
+    }
+  ],
+  "result": {
+    "item": "warpedabyss:neodymium_ingot",
+    "count": 9
+  }
+}

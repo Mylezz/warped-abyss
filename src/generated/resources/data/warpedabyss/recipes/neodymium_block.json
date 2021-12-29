@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "warpedabyss:neodymium_ingot"
+    },
+    {
+      "item": "warpedabyss:neodymium_ingot"
+    },
+    {
+      "item": "warpedabyss:neodymium_ingot"
+    },
+    {
+      "item": "warpedabyss:neodymium_ingot"
+    },
+    {
+      "item": "warpedabyss:neodymium_ingot"
+    },
+    {
+      "item": "warpedabyss:neodymium_ingot"
+    },
+    {
+      "item": "warpedabyss:neodymium_ingot"
+    },
+    {
+      "item": "warpedabyss:neodymium_ingot"
+    },
+    {
+      "item": "warpedabyss:neodymium_ingot"
+    }
+  ],
+  "result": {
+    "item": "warpedabyss:neodymium_block"
+  }
+}

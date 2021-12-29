@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "warpedabyss:palladium_ingot"
+    },
+    {
+      "item": "warpedabyss:palladium_ingot"
+    },
+    {
+      "item": "warpedabyss:palladium_ingot"
+    },
+    {
+      "item": "warpedabyss:palladium_ingot"
+    },
+    {
+      "item": "warpedabyss:palladium_ingot"
+    },
+    {
+      "item": "warpedabyss:palladium_ingot"
+    },
+    {
+      "item": "warpedabyss:palladium_ingot"
+    },
+    {
+      "item": "warpedabyss:palladium_ingot"
+    },
+    {
+      "item": "warpedabyss:palladium_ingot"
+    }
+  ],
+  "result": {
+    "item": "warpedabyss:palladium_block"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "warpedabyss:lawrencium_ingot"
+    },
+    {
+      "item": "warpedabyss:lawrencium_ingot"
+    },
+    {
+      "item": "warpedabyss:lawrencium_ingot"
+    },
+    {
+      "item": "warpedabyss:lawrencium_ingot"
+    },
+    {
+      "item": "warpedabyss:lawrencium_ingot"
+    },
+    {
+      "item": "warpedabyss:lawrencium_ingot"
+    },
+    {
+      "item": "warpedabyss:lawrencium_ingot"
+    },
+    {
+      "item": "warpedabyss:lawrencium_ingot"
+    },
+    {
+      "item": "warpedabyss:lawrencium_ingot"
+    }
+  ],
+  "result": {
+    "item": "warpedabyss:lawrencium_block"
+  }
+}

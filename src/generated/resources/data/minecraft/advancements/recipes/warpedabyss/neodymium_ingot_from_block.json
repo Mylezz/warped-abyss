@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:lawrencium_ingot"
+      "minecraft:neodymium_ingot_from_block"
     ]
   },
   "criteria": {
-    "lawrencium": {
+    "neodymium": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "warpedabyss:lawrencium_ingot"
+              "warpedabyss:neodymium_ingot"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:lawrencium_ingot"
+        "recipe": "minecraft:neodymium_ingot_from_block"
       }
     }
   },
   "requirements": [
     [
-      "lawrencium",
+      "neodymium",
       "has_the_recipe"
     ]
   ]

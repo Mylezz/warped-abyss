@@ -2,17 +2,17 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:palladium_ingot"
+      "warpedabyss:neodymium_block"
     ]
   },
   "criteria": {
-    "palladium": {
+    "neodymium": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "warpedabyss:palladium_ingot"
+              "warpedabyss:neodymium_ingot"
             ]
           }
         ]
@@ -21,13 +21,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:palladium_ingot"
+        "recipe": "warpedabyss:neodymium_block"
       }
     }
   },
   "requirements": [
     [
-      "palladium",
+      "neodymium",
       "has_the_recipe"
     ]
   ]
