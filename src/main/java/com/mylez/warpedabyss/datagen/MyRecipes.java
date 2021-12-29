@@ -1,15 +1,14 @@
 package com.mylez.warpedabyss.datagen;
 
+import com.mylez.warpedabyss.WarpedAbyss;
 import com.mylez.warpedabyss.setup.Registration;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.HashCache;
-import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
-import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.ShapelessRecipe;
 import net.minecraftforge.common.Tags;
 
 import java.io.IOException;
@@ -41,7 +40,38 @@ public class MyRecipes extends RecipeProvider {
                 .unlockedBy("has_chunk", has(Registration.RAW_LAWRENCIUM_CHUNK.get()))
                 .save(consumer, "lawrencium_ingot2");
 
-        //crafting
+        //nuggets from ingots (SHAPELESS EXAMPLE)
+        ShapelessRecipeBuilder.shapeless(Registration.NEODYMIUM_NUGGET.get(), 9)
+                        .requires(Registration.NEODYMIUM_INGOT.get())
+                        .unlockedBy("neodymium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.NEODYMIUM_INGOT.get()))
+                        .save(consumer);
+        ShapelessRecipeBuilder.shapeless(Registration.LAWRENCIUM_NUGGET.get(), 9)
+                .requires(Registration.LAWRENCIUM_INGOT.get())
+                .unlockedBy("lawrencium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.LAWRENCIUM_INGOT.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(Registration.PALLADIUM_NUGGET.get(), 9)
+                .requires(Registration.PALLADIUM_INGOT.get())
+                .unlockedBy("palladium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PALLADIUM_INGOT.get()))
+                .save(consumer);
+
+        // nuggets to ingots
+        ShapelessRecipeBuilder.shapeless(Registration.NEODYMIUM_INGOT.get())
+                .requires(Registration.NEODYMIUM_NUGGET.get(), 9)
+                .unlockedBy("neodymium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.NEODYMIUM_NUGGET.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(Registration.LAWRENCIUM_INGOT.get())
+                .requires(Registration.LAWRENCIUM_NUGGET.get(), 9)
+                .unlockedBy("lawrencium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.LAWRENCIUM_NUGGET.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(Registration.PALLADIUM_INGOT.get())
+                .requires(Registration.PALLADIUM_NUGGET.get(), 9)
+                .unlockedBy("palladium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PALLADIUM_NUGGET.get()))
+                .save(consumer);
+
+
+
+
+
         //coils
         ShapedRecipeBuilder.shaped(Registration.NEODYMIUM_COIL.get())
                 .pattern("  #")
@@ -62,7 +92,25 @@ public class MyRecipes extends RecipeProvider {
                 .group("warpedabyss")
                 .unlockedBy("lawrencium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.LAWRENCIUM_INGOT.get()))
                 .save(consumer);
-        //machines
+        ShapedRecipeBuilder.shaped(Registration.PALLADIUM_COIL.get())
+                .pattern("  #")
+                .pattern(" m ")
+                .pattern("#  ")
+                .define('#', Tags.Items.DUSTS_REDSTONE)
+                .define('m', Registration.PALLADIUM_INGOT.get())
+                .group("warpedabyss")
+                .unlockedBy("palladium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PALLADIUM_INGOT.get()))
+                .save(consumer);
+        //lattices
+/*        ShapedRecipeBuilder.shaped(Registration.NETHER_STAR_LATTICE.get())
+                .pattern("  #")
+                .pattern(" m ")
+                .pattern("#  ")
+                .define('#', Tags.Items.DUSTS_REDSTONE)
+                .define('m', Registration.LAWRENCIUM_INGOT.get())
+                .group("warpedabyss")
+                .unlockedBy("lawrencium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.LAWRENCIUM_INGOT.get()))
+                .save(consumer);*/
 
     }
 }

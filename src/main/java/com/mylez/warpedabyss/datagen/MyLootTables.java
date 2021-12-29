@@ -18,5 +18,8 @@ public class MyLootTables extends BaseLootTableProvider {
         //lawrencium ore
         lootTables.put(Registration.LAWRENCIUM_ORE_OVERWORLD.get(), createSilkTouchTable("lawrencium_ore_overworld", Registration.LAWRENCIUM_ORE_OVERWORLD.get(), Registration.RAW_LAWRENCIUM_CHUNK.get(), 1, 3));
         lootTables.put(Registration.LAWRENCIUM_ORE_DEEPSLATE.get(), createSilkTouchTable("lawrencium_ore_deepslate", Registration.LAWRENCIUM_ORE_DEEPSLATE.get(), Registration.RAW_LAWRENCIUM_CHUNK.get(), 1, 3));
+        //Palladium ore
+        lootTables.put(Registration.PALLADIUM_ORE_OVERWORLD.get(), createSilkTouchTable("palladium_ore_overworld", Registration.PALLADIUM_ORE_OVERWORLD.get(), Registration.RAW_PALLADIUM_CHUNK.get(), 1, 3));
+        lootTables.put(Registration.PALLADIUM_ORE_DEEPSLATE.get(), createSilkTouchTable("palladium_ore_deepslate", Registration.PALLADIUM_ORE_DEEPSLATE.get(), Registration.RAW_PALLADIUM_CHUNK.get(), 1, 3));
     }
 }

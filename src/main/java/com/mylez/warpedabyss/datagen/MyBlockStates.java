@@ -25,6 +25,8 @@ public class MyBlockStates extends BlockStateProvider {
         simpleBlock(Registration.NEODYMIUM_ORE_DEEPSLATE.get());
         simpleBlock(Registration.LAWRENCIUM_ORE_OVERWORLD.get());
         simpleBlock(Registration.LAWRENCIUM_ORE_DEEPSLATE.get());
+        simpleBlock(Registration.PALLADIUM_ORE_OVERWORLD.get());
+        simpleBlock(Registration.PALLADIUM_ORE_DEEPSLATE.get());
     }
 
 

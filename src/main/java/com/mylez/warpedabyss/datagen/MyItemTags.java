@@ -20,7 +20,9 @@ public class MyItemTags extends ItemTagsProvider {
                 .add(Registration.NEODYMIUM_ORE_OVERWORLD_ITEM.get())
                 .add(Registration.NEODYMIUM_ORE_DEEPSLATE_ITEM.get())
                 .add(Registration.LAWRENCIUM_ORE_OVERWORLD_ITEM.get())
-                .add(Registration.LAWRENCIUM_ORE_DEEPSLATE_ITEM.get());
+                .add(Registration.LAWRENCIUM_ORE_DEEPSLATE_ITEM.get())
+                .add(Registration.PALLADIUM_ORE_OVERWORLD_ITEM.get())
+                .add(Registration.PALLADIUM_ORE_DEEPSLATE_ITEM.get());
 
         tag(Registration.NEODYMIUM_ORE_ITEM)
                 .add(Registration.NEODYMIUM_ORE_OVERWORLD_ITEM.get())
@@ -29,10 +31,14 @@ public class MyItemTags extends ItemTagsProvider {
         tag(Registration.LAWRENCIUM_ORE_ITEM)
                 .add(Registration.LAWRENCIUM_ORE_OVERWORLD_ITEM.get())
                 .add(Registration.LAWRENCIUM_ORE_DEEPSLATE_ITEM.get());
+        tag(Registration.LAWRENCIUM_ORE_ITEM)
+                .add(Registration.PALLADIUM_ORE_OVERWORLD_ITEM.get())
+                .add(Registration.PALLADIUM_ORE_DEEPSLATE_ITEM.get());
 
         tag(Tags.Items.INGOTS)
                 .add(Registration.NEODYMIUM_INGOT.get())
-                .add(Registration.LAWRENCIUM_INGOT.get());
+                .add(Registration.LAWRENCIUM_INGOT.get())
+                .add(Registration.PALLADIUM_INGOT.get());
 
     }
 

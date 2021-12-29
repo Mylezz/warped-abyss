@@ -23,20 +23,27 @@ public class MyLanguageProvider extends LanguageProvider {
         //lawrencium
         add(Registration.LAWRENCIUM_ORE_OVERWORLD.get(), "Lawrencium ore");
         add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get(), "Deepslate Lawrencium ore");
-
+        //palladium
+        add(Registration.PALLADIUM_ORE_OVERWORLD.get(), "Palladium ore");
+        add(Registration.PALLADIUM_ORE_DEEPSLATE.get(), "Deepslate Palladium ore");
         //Chunks
         add(Registration.RAW_NEODYMIUM_CHUNK.get(), "Neodymium Raw Chunk");
         add(Registration.RAW_LAWRENCIUM_CHUNK.get(), "Lawrencium Raw Chunk");
+        add(Registration.RAW_PALLADIUM_CHUNK.get(), "Palladium Raw Chunk");
         //ingots
         add(Registration.NEODYMIUM_INGOT.get(), "Neodymium Ingot");
         add(Registration.LAWRENCIUM_INGOT.get(), "Lawrencium Ingot");
+        add(Registration.PALLADIUM_INGOT.get(), "Palladium Ingot");
         //nuggets
         add(Registration.NEODYMIUM_NUGGET.get(), "Neodymium Nugget");
         add(Registration.LAWRENCIUM_NUGGET.get(), "Lawrencium Nugget");
+        add(Registration.PALLADIUM_NUGGET.get(), "Palladium Nugget");
         //coils
         add(Registration.NEODYMIUM_COIL.get(), "Neodymium Coil");
         add(Registration.LAWRENCIUM_COIL.get(), "Lawrencium Coil");
-
+        add(Registration.PALLADIUM_COIL.get(), "Palladium Coil");
+        //lattices
+        add(Registration.NETHER_STAR_LATTICE.get(), "Nether Star Lattice");
 
 
 

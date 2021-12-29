@@ -21,24 +21,34 @@ public class MyBlockTags extends BlockTagsProvider {
                 .add(Registration.NEODYMIUM_ORE_OVERWORLD.get())
                 .add(Registration.NEODYMIUM_ORE_DEEPSLATE.get())
                 .add(Registration.LAWRENCIUM_ORE_OVERWORLD.get())
-                .add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get());
+                .add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get())
+                .add(Registration.PALLADIUM_ORE_OVERWORLD.get())
+                .add(Registration.PALLADIUM_ORE_DEEPSLATE.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
 
                 .add(Registration.NEODYMIUM_ORE_OVERWORLD.get())
                 .add(Registration.NEODYMIUM_ORE_DEEPSLATE.get())
                 .add(Registration.LAWRENCIUM_ORE_OVERWORLD.get())
-                .add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get());
+                .add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get())
+                .add(Registration.PALLADIUM_ORE_OVERWORLD.get())
+                .add(Registration.PALLADIUM_ORE_DEEPSLATE.get());
         tag(Tags.Blocks.ORES)
                 .add(Registration.NEODYMIUM_ORE_OVERWORLD.get())
                 .add(Registration.NEODYMIUM_ORE_DEEPSLATE.get())
                 .add(Registration.LAWRENCIUM_ORE_OVERWORLD.get())
-                .add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get());
+                .add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get())
+                .add(Registration.PALLADIUM_ORE_OVERWORLD.get())
+                .add(Registration.PALLADIUM_ORE_DEEPSLATE.get());
         tag(Registration.NEODYMIUM_ORE)
                 .add(Registration.NEODYMIUM_ORE_OVERWORLD.get())
                 .add(Registration.NEODYMIUM_ORE_DEEPSLATE.get());
         tag(Registration.LAWRENCIUM_ORE)
                 .add(Registration.LAWRENCIUM_ORE_OVERWORLD.get())
                 .add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get());
+        tag(Registration.PALLADIUM_ORE)
+                .add(Registration.PALLADIUM_ORE_OVERWORLD.get())
+                .add(Registration.PALLADIUM_ORE_DEEPSLATE.get());
+
 
     }
 

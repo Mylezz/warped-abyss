@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "warpedabyss:lawrencium_ore_overworld",
-    "warpedabyss:lawrencium_ore_deepslate",
     "warpedabyss:palladium_ore_overworld",
     "warpedabyss:palladium_ore_deepslate"
   ]
