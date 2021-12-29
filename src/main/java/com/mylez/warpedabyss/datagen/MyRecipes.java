@@ -79,7 +79,7 @@ public class MyRecipes extends RecipeProvider {
                 .save(consumer);
 
         //blocks into ingots
-        ShapelessRecipeBuilder.shapeless(Registration.NEODYMIUM_INGOT.get())
+/*        ShapelessRecipeBuilder.shapeless(Registration.NEODYMIUM_INGOT.get())
                 .requires(Registration.NEODYMIUM_BLOCK_STORAGE.get(), 9)
                 .unlockedBy("neodymium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.NEODYMIUM_INGOT.get()))
                 .save(consumer);
@@ -90,7 +90,7 @@ public class MyRecipes extends RecipeProvider {
         ShapelessRecipeBuilder.shapeless(Registration.PALLADIUM_INGOT.get())
                 .requires(Registration.PALLADIUM_BLOCK_STORAGE.get(), 9)
                 .unlockedBy("palladium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PALLADIUM_INGOT.get()))
-                .save(consumer);
+                .save(consumer);*/
 
         //ingots into blocks
         ShapelessRecipeBuilder.shapeless(Registration.NEODYMIUM_BLOCK_STORAGE.get(), 1)
