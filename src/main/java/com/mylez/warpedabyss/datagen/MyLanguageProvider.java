@@ -17,19 +17,33 @@ public class MyLanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         add("itemGroup." + TAB_NAME, "Warped Abyss");
         //blocks
-
+        //neodymium
         add(Registration.NEODYMIUM_ORE_OVERWORLD.get(), "Neodymium ore");
         add(Registration.NEODYMIUM_ORE_DEEPSLATE.get(), "Deepslate Neodymium ore");
+        //lawrencium
+        add(Registration.LAWRENCIUM_ORE_OVERWORLD.get(), "Lawrencium ore");
+        add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get(), "Deepslate Lawrencium ore");
 /*        add(MESSAGE_POWERGEN, "Power generator generating %s per tick!");
         add(MESSAGE_GENERATOR, "Generate ores from ingots!");
         add(SCREEN_TUTORIAL_POWERGEN, "Power generator");
         add(Registration.GENERATOR.get(), "Generator");
         add(Registration.POWERGEN.get(), "Power generator");*/
         //items
-
+        //Chunks
         add(Registration.RAW_NEODYMIUM_CHUNK.get(), "Neodymium Raw Chunk");
+        add(Registration.RAW_LAWRENCIUM_CHUNK.get(), "Lawrencium Raw Chunk");
+        //ingots
         add(Registration.NEODYMIUM_INGOT.get(), "Neodymium Ingot");
+        add(Registration.LAWRENCIUM_INGOT.get(), "Lawrencium Ingot");
+        //nuggets
         add(Registration.NEODYMIUM_NUGGET.get(), "Neodymium Nugget");
+        add(Registration.LAWRENCIUM_NUGGET.get(), "Lawrencium Nugget");
+        //coils
+        add(Registration.NEODYMIUM_COIL.get(), "Neodymium Coil");
+        add(Registration.LAWRENCIUM_COIL.get(), "Lawrencium Coil");
+
+
+
 
 
         //ENTITY

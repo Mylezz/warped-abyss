@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "warpedabyss:item/lawrencium_coil"
+  }
+}

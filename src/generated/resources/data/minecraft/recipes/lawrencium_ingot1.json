@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "warpedabyss:lawrencium_ore"
+  },
+  "result": "warpedabyss:lawrencium_ingot",
+  "experience": 1.0,
+  "cookingtime": 100
+}

@@ -22,6 +22,7 @@ public class MyRecipes extends RecipeProvider {
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
         //smelting
+        //NEODYMIUM
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.NEODYMIUM_ORE_ITEM),
                         Registration.NEODYMIUM_INGOT.get(), 1.0f, 100)
                 .unlockedBy("has_ore", has(Registration.NEODYMIUM_ORE_ITEM))
@@ -30,20 +31,39 @@ public class MyRecipes extends RecipeProvider {
                         Registration.NEODYMIUM_INGOT.get(), 0.0f, 100)
                 .unlockedBy("has_chunk", has(Registration.RAW_NEODYMIUM_CHUNK.get()))
                 .save(consumer, "neodymium_ingot2");
+        //LAWRENCIUM
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.LAWRENCIUM_ORE_ITEM),
+                        Registration.LAWRENCIUM_INGOT.get(), 1.0f, 100)
+                .unlockedBy("has_ore", has(Registration.LAWRENCIUM_ORE_ITEM))
+                .save(consumer, "lawrencium_ingot1");
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.RAW_LAWRENCIUM_CHUNK.get()),
+                        Registration.LAWRENCIUM_INGOT.get(), 0.0f, 100)
+                .unlockedBy("has_chunk", has(Registration.RAW_LAWRENCIUM_CHUNK.get()))
+                .save(consumer, "lawrencium_ingot2");
 
         //crafting
-
-/*        ShapedRecipeBuilder.shaped(Registration.GENERATOR.get())
-                .pattern("mxm")
-                .pattern("x#x")
-                .pattern("#x#")
-                .define('x', Tags.Items.GEMS_DIAMOND)
-                .define('#', Tags.Items.INGOTS_IRON)
+        //coils
+        ShapedRecipeBuilder.shaped(Registration.NEODYMIUM_COIL.get())
+                .pattern("  #")
+                .pattern(" m ")
+                .pattern("#  ")
+                .define('#', Tags.Items.DUSTS_REDSTONE)
                 .define('m', Registration.NEODYMIUM_INGOT.get())
-                .group("tutorialv3")
-                .unlockedBy("mysterious", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.NEODYMIUM_INGOT.get()))
+                .group("warpedabyss")
+                .unlockedBy("neodymium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.NEODYMIUM_INGOT.get()))
                 .save(consumer);
-        ShapedRecipeBuilder.shaped(Registration.POWERGEN.get())
+
+        ShapedRecipeBuilder.shaped(Registration.LAWRENCIUM_COIL.get())
+                .pattern("  #")
+                .pattern(" m ")
+                .pattern("#  ")
+                .define('#', Tags.Items.DUSTS_REDSTONE)
+                .define('m', Registration.LAWRENCIUM_INGOT.get())
+                .group("warpedabyss")
+                .unlockedBy("lawrencium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.LAWRENCIUM_INGOT.get()))
+                .save(consumer);
+        //machines
+        /*ShapedRecipeBuilder.shaped(Registration.POWERGEN.get())
                 .pattern("mmm")
                 .pattern("x#x")
                 .pattern("#x#")

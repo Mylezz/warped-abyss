@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "warpedabyss:neodymium_ingot"
+    "warpedabyss:neodymium_ingot",
+    "warpedabyss:lawrencium_ingot"
   ]
 }

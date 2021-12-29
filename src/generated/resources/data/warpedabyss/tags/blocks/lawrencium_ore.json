@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "warpedabyss:neodymium_ore_overworld",
+    "warpedabyss:neodymium_ore_deepslate",
+    "warpedabyss:lawrencium_ore_overworld",
+    "warpedabyss:lawrencium_ore_deepslate"
+  ]
+}

@@ -18,13 +18,21 @@ public class MyItemTags extends ItemTagsProvider {
     protected void addTags() {
         tag(Tags.Items.ORES)
                 .add(Registration.NEODYMIUM_ORE_OVERWORLD_ITEM.get())
-                .add(Registration.NEODYMIUM_ORE_DEEPSLATE_ITEM.get());
+                .add(Registration.NEODYMIUM_ORE_DEEPSLATE_ITEM.get())
+                .add(Registration.LAWRENCIUM_ORE_OVERWORLD_ITEM.get())
+                .add(Registration.LAWRENCIUM_ORE_DEEPSLATE_ITEM.get());
+
         tag(Registration.NEODYMIUM_ORE_ITEM)
                 .add(Registration.NEODYMIUM_ORE_OVERWORLD_ITEM.get())
                 .add(Registration.NEODYMIUM_ORE_DEEPSLATE_ITEM.get());
-        tag(Tags.Items.INGOTS)
-                .add(Registration.NEODYMIUM_INGOT.get());
 
+        tag(Registration.LAWRENCIUM_ORE_ITEM)
+                .add(Registration.LAWRENCIUM_ORE_OVERWORLD_ITEM.get())
+                .add(Registration.LAWRENCIUM_ORE_DEEPSLATE_ITEM.get());
+
+        tag(Tags.Items.INGOTS)
+                .add(Registration.NEODYMIUM_INGOT.get())
+                .add(Registration.LAWRENCIUM_INGOT.get());
 
     }
 

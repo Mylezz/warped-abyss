@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "warpedabyss:raw_lawrencium_chunk"
+  },
+  "result": "warpedabyss:lawrencium_ingot",
+  "experience": 0.0,
+  "cookingtime": 100
+}

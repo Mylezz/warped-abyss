@@ -20,18 +20,27 @@ public class MyBlockTags extends BlockTagsProvider {
 /*                .add(Registration.GENERATOR.get())
                 .add(Registration.POWERGEN.get())*/
                 .add(Registration.NEODYMIUM_ORE_OVERWORLD.get())
-                .add(Registration.NEODYMIUM_ORE_DEEPSLATE.get());
+                .add(Registration.NEODYMIUM_ORE_DEEPSLATE.get())
+                .add(Registration.LAWRENCIUM_ORE_OVERWORLD.get())
+                .add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
 /*                .add(Registration.GENERATOR.get())
                 .add(Registration.POWERGEN.get())*/
                 .add(Registration.NEODYMIUM_ORE_OVERWORLD.get())
-                .add(Registration.NEODYMIUM_ORE_DEEPSLATE.get());
+                .add(Registration.NEODYMIUM_ORE_DEEPSLATE.get())
+                .add(Registration.LAWRENCIUM_ORE_OVERWORLD.get())
+                .add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get());
         tag(Tags.Blocks.ORES)
                 .add(Registration.NEODYMIUM_ORE_OVERWORLD.get())
-                .add(Registration.NEODYMIUM_ORE_DEEPSLATE.get());
+                .add(Registration.NEODYMIUM_ORE_DEEPSLATE.get())
+                .add(Registration.LAWRENCIUM_ORE_OVERWORLD.get())
+                .add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get());
         tag(Registration.NEODYMIUM_ORE)
                 .add(Registration.NEODYMIUM_ORE_OVERWORLD.get())
                 .add(Registration.NEODYMIUM_ORE_DEEPSLATE.get());
+        tag(Registration.LAWRENCIUM_ORE)
+                .add(Registration.LAWRENCIUM_ORE_OVERWORLD.get())
+                .add(Registration.LAWRENCIUM_ORE_DEEPSLATE.get());
 
     }
 
