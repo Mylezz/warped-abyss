@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "warpedabyss:raw_palladium_chunk"
+  },
+  "result": "warpedabyss:palladium_ingot",
+  "experience": 0.0,
+  "cookingtime": 100
+}

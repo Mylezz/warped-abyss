@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:neodymium_ingot"
+    ]
+  },
+  "criteria": {
+    "neodymium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "warpedabyss:neodymium_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:neodymium_ingot"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "neodymium",
+      "has_the_recipe"
+    ]
+  ]
+}

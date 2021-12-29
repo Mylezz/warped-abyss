@@ -7,6 +7,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.HashCache;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.ShapelessRecipe;
 import net.minecraftforge.common.Tags;
@@ -39,8 +40,17 @@ public class MyRecipes extends RecipeProvider {
                         Registration.LAWRENCIUM_INGOT.get(), 0.0f, 100)
                 .unlockedBy("has_chunk", has(Registration.RAW_LAWRENCIUM_CHUNK.get()))
                 .save(consumer, "lawrencium_ingot2");
+        //palladium
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.PALLADIUM_ORE_ITEM),
+                        Registration.PALLADIUM_INGOT.get(), 1.0f, 100)
+                .unlockedBy("has_ore", has(Registration.PALLADIUM_ORE_ITEM))
+                .save(consumer, "palladium_ingot1");
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Registration.RAW_PALLADIUM_CHUNK.get()),
+                        Registration.PALLADIUM_INGOT.get(), 0.0f, 100)
+                .unlockedBy("has_chunk", has(Registration.RAW_PALLADIUM_CHUNK.get()))
+                .save(consumer, "palladium_ingot2");
 
-        //nuggets from ingots (SHAPELESS EXAMPLE)
+        //nuggets into ingot (SHAPELESS EXAMPLE TOO!!!)
         ShapelessRecipeBuilder.shapeless(Registration.NEODYMIUM_NUGGET.get(), 9)
                         .requires(Registration.NEODYMIUM_INGOT.get())
                         .unlockedBy("neodymium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.NEODYMIUM_INGOT.get()))
@@ -54,7 +64,7 @@ public class MyRecipes extends RecipeProvider {
                 .unlockedBy("palladium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PALLADIUM_INGOT.get()))
                 .save(consumer);
 
-        // nuggets to ingots
+        // ingot into nuggets
         ShapelessRecipeBuilder.shapeless(Registration.NEODYMIUM_INGOT.get())
                 .requires(Registration.NEODYMIUM_NUGGET.get(), 9)
                 .unlockedBy("neodymium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.NEODYMIUM_NUGGET.get()))
@@ -68,22 +78,33 @@ public class MyRecipes extends RecipeProvider {
                 .unlockedBy("palladium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PALLADIUM_NUGGET.get()))
                 .save(consumer);
 
-        //blocks
-/*        ShapelessRecipeBuilder.shapeless(Registration.NEODYMIUM_BLOCK.get())
+        //blocks into ingots
+        ShapelessRecipeBuilder.shapeless(Registration.NEODYMIUM_INGOT.get())
+                .requires(Registration.NEODYMIUM_BLOCK_STORAGE.get(), 9)
+                .unlockedBy("neodymium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.NEODYMIUM_INGOT.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(Registration.LAWRENCIUM_INGOT.get())
+                .requires(Registration.LAWRENCIUM_BLOCK_STORAGE.get(), 9)
+                .unlockedBy("lawrencium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.LAWRENCIUM_INGOT.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(Registration.PALLADIUM_INGOT.get())
+                .requires(Registration.PALLADIUM_BLOCK_STORAGE.get(), 9)
+                .unlockedBy("palladium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PALLADIUM_INGOT.get()))
+                .save(consumer);
+
+        //ingots into blocks
+        ShapelessRecipeBuilder.shapeless(Registration.NEODYMIUM_BLOCK_STORAGE.get(), 1)
                 .requires(Registration.NEODYMIUM_INGOT.get(), 9)
                 .unlockedBy("neodymium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.NEODYMIUM_INGOT.get()))
                 .save(consumer);
-        ShapelessRecipeBuilder.shapeless(Registration.LAWRENCIUM_BLOCK.get())
+        ShapelessRecipeBuilder.shapeless(Registration.LAWRENCIUM_BLOCK_STORAGE.get(), 1)
                 .requires(Registration.LAWRENCIUM_INGOT.get(), 9)
                 .unlockedBy("lawrencium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.LAWRENCIUM_INGOT.get()))
                 .save(consumer);
-        ShapelessRecipeBuilder.shapeless(Registration.PALLADIUM_BLOCK.get())
+        ShapelessRecipeBuilder.shapeless(Registration.PALLADIUM_BLOCK_STORAGE.get(), 1)
                 .requires(Registration.PALLADIUM_INGOT.get(), 9)
                 .unlockedBy("palladium", InventoryChangeTrigger.TriggerInstance.hasItems(Registration.PALLADIUM_INGOT.get()))
-                .save(consumer);*/
-
-
-
+                .save(consumer);
 
         //coils
         ShapedRecipeBuilder.shaped(Registration.NEODYMIUM_COIL.get())

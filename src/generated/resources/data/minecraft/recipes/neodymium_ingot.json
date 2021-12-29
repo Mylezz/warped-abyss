@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "warpedabyss",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "warpedabyss:neodymium_ingot"
+    }
+  },
+  "result": {
+    "item": "warpedabyss:neodymium_block"
+  }
+}

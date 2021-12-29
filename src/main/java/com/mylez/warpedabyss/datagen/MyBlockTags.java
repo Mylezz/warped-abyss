@@ -65,7 +65,7 @@ public class MyBlockTags extends BlockTagsProvider {
                 .add(Registration.NEODYMIUM_BLOCK_STORAGE.get())
                 .add(Registration.LAWRENCIUM_BLOCK_STORAGE.get())
                 .add(Registration.PALLADIUM_BLOCK_STORAGE.get());
-        //storage blocks
+        //storage ???????
 /*        tag(Tags.Blocks.NEODYMIUM_BLOCK)
                 .add(Registration.NEODYMIUM_BLOCK_STORAGE.get());
         tag(Tags.Blocks.LAWRENCIUM_BLOCK)
